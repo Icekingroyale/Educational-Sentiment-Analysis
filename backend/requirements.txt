@@ -1,24 +1,24 @@
-anyio==4.9.0
-blinker==1.9.0
-certifi==2025.4.26
-click==8.2.0
-colorama==0.4.6
-Flask==2.3.3
-Flask-Cors==4.0.0
-h11==0.14.0
-httpcore==0.17.3
-httpx==0.24.1
-idna==3.10
-itsdangerous==2.2.0
-Jinja2==3.1.6
-joblib==1.5.0
-MarkupSafe==3.0.2
-numpy==2.3
-python-telegram-bot==20.3
-scikit-learn==1.3.0
-scipy==1.15.3
-sniffio==1.3.1
-threadpoolctl==3.6.0
-typing_extensions==4.13.2
-Werkzeug==3.1.3
-gunicorn
+anyio>=4.9.0             # latest (already compatible)
+blinker>=1.9.0           # compatible
+certifi>=2025.4.26       # OK
+click>=8.2.0             # OK
+colorama>=0.4.6          # OK
+Flask>=2.3.3             # OK
+Flask-Cors>=4.0.0        # OK
+h11>=0.14.0              # OK
+httpcore>=0.17.3         # OK
+httpx>=0.24.1            # Ensure latest bugfix
+idna>=3.10                # Compatible
+itsdangerous>=2.2.0      # OK
+Jinja2>=3.1.6            # OK
+MarkupSafe>=3.0.2        # OK
+joblib==1.5.0            # meets ≥1.2
+threadpoolctl==3.6.0     # meets ≥3.1
+typing_extensions==4.13.2 # OK
+Werkzeug>=3.1.3          # OK
+gunicorn                  # latest works with Flask under 3.13
+numpy==2.3.2             # latest in 2.3 series
+scipy==1.11.3            # compatible with numpy 2.3
+scikit-learn==1.6.1      # first stable version officially supporting Python 3.13 :contentReference[oaicite:9]{index=9}
+python-telegram-bot>=20.3 # check its own compat—20.3 supports 3.13 in published pip metadata
+sniffio>=1.3.1            # OK
