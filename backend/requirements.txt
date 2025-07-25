@@ -18,7 +18,7 @@ typing_extensions==4.13.2 # OK
 Werkzeug>=3.1.3          # OK
 gunicorn                  # latest works with Flask under 3.13
 numpy==2.3.2             # latest in 2.3 series
-scipy==1.11.3            # compatible with numpy 2.3
+scipy==1.13.1            # compatible with numpy 2.3
 scikit-learn==1.6.1      # first stable version officially supporting Python 3.13 :contentReference[oaicite:9]{index=9}
 python-telegram-bot>=20.3 # check its own compat—20.3 supports 3.13 in published pip metadata
 sniffio>=1.3.1            # OK
