@@ -21,6 +21,8 @@ RUN pip install -r requirements.txt
 # Copy the rest of the code
 COPY . .
 
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
+
 # Expose the port for Flask/Gunicorn
 EXPOSE 5000
 
