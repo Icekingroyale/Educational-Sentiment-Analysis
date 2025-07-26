@@ -42,7 +42,7 @@ export default function UploadCSV({ onUploadSuccess }: UploadCSVProps) {
       const formData = new FormData()
       formData.append("file", file)
 
-      const response = await fetch("http://localhost:5000/api/analyze-csv", {
+      const response = await fetch("https://educational-sentiment-analysis.onrender.com/api/analyze-csv", {
         method: "POST",
         body: formData,
       })

@@ -16,7 +16,7 @@ export default function ResultsTable({ feedbackData, setFeedbackData }: ResultsT
     // Fetch initial data when component mounts
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/feedback")
+        const response = await fetch("https://educational-sentiment-analysis.onrender.com/api/feedback")
         if (response.ok) {
           const data = await response.json()
           setFeedbackData(data.feedback)
