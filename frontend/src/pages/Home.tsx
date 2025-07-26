@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/feedback")
+        const response = await fetch('https://educational-sentiment-analysis.onrender.com/api/feedback');
         if (response.ok) {
           const data = await response.json()
           setFeedbackData(data.feedback)
@@ -40,7 +40,7 @@ export default function Home() {
   const handleExportCSV = async () => {
     try {
       setLoading(true)
-      const response = await fetch("http://localhost:5000/api/export-csv")
+      const response = await fetch("https://educational-sentiment-analysis.onrender.com/api/export-csv")
       const data = await response.json()
 
       // Create a blob and download link
